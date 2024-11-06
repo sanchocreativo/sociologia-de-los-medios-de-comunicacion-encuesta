@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/sociologia-de-los-medios-de-comunicacion-encuesta/static/css/main.1fa0ed86.css",
-    "main.js": "/sociologia-de-los-medios-de-comunicacion-encuesta/static/js/main.3f18da5e.js",
+    "main.js": "/sociologia-de-los-medios-de-comunicacion-encuesta/static/js/main.f49b205f.js",
     "static/js/453.3b849284.chunk.js": "/sociologia-de-los-medios-de-comunicacion-encuesta/static/js/453.3b849284.chunk.js",
     "index.html": "/sociologia-de-los-medios-de-comunicacion-encuesta/index.html",
     "main.1fa0ed86.css.map": "/sociologia-de-los-medios-de-comunicacion-encuesta/static/css/main.1fa0ed86.css.map",
-    "main.3f18da5e.js.map": "/sociologia-de-los-medios-de-comunicacion-encuesta/static/js/main.3f18da5e.js.map",
+    "main.f49b205f.js.map": "/sociologia-de-los-medios-de-comunicacion-encuesta/static/js/main.f49b205f.js.map",
     "453.3b849284.chunk.js.map": "/sociologia-de-los-medios-de-comunicacion-encuesta/static/js/453.3b849284.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1fa0ed86.css",
-    "static/js/main.3f18da5e.js"
+    "static/js/main.f49b205f.js"
   ]
 }
