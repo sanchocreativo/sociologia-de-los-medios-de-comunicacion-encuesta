@@ -48,28 +48,28 @@ const App = () => {
         title="Uso de Aplicaciones Financieras y Preferencia de Recursos Financieros"
         description="Este gráfico muestra la preferencia de los encuestados por diferentes recursos financieros, como fintech, bancos tradicionales y criptomonedas. Permite analizar cómo los jóvenes eligen manejar sus finanzas."
         chart={<StackedBarChart width={600} height={400} data={filteredData} />}
-        svg="/assets/undraw_bitcoin_re_urgq.svg"
+        svg="https://sanchocreativo.github.io/sociologia-de-los-medios-de-comunicacion-encuesta/assets/undraw_bitcoin_re_urgq.svg"
       />
 
       <ChartPage
         title="Relación entre Tipo de Contenido Preferido y Tiempo en Celular"
         description="Este gráfico analiza la relación entre el tipo de contenido que prefieren los jóvenes para informarse y el tiempo que pasan en el celular. Proporciona una perspectiva sobre cómo el tiempo de uso afecta el consumo de diferentes tipos de información."
         chart={<HeatmapChart width={600} height={400} data={filteredData} />}
-        svg="/assets/undraw_social_ideas_re_j5v4.svg"
+        svg="https://sanchocreativo.github.io/sociologia-de-los-medios-de-comunicacion-encuesta/assets/undraw_social_ideas_re_j5v4.svg"
       />
 
       <ChartPage
         title="Confianza e Influencia en Decisiones de Compra"
         description="Este gráfico muestra cómo la confianza en la información de redes sociales y la influencia de amigos afectan las decisiones de compra de los encuestados. Es útil para entender los factores sociales en las decisiones de compra."
         chart={<SankeyApproximation width={600} height={400} data={filteredData} />}
-        svg="/assets/undraw_social_distancing_2g0u.svg"
+        svg="https://sanchocreativo.github.io/sociologia-de-los-medios-de-comunicacion-encuesta/assets/undraw_social_distancing_2g0u.svg"
       />
 
       <ChartPage
         title="Influencia de Amigos en Decisiones de Compra"
         description="Este gráfico presenta la influencia de los amigos de los encuestados en sus decisiones de compra. Examina el rol que juegan las relaciones sociales en el comportamiento de consumo."
         chart={<ScatterPlot width={600} height={400} data={filteredData} />}
-        svg="/assets/undraw_social_sharing_re_pvmr.svg"
+        svg="https://sanchocreativo.github.io/sociologia-de-los-medios-de-comunicacion-encuesta/assets/undraw_social_sharing_re_pvmr.svg"
       />
 
       <ChartPage

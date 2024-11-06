@@ -32,7 +32,7 @@ const RadarPage = () => {
       <div style={{ flex: 1 }}>
         <RadarChart data={processedData} width={500} height={500} />
         <div className="text-centered">
-        <img src="/assets/undraw_social_sharing_re_pvmr.svg" alt={`illustration`} className="svg-image" />
+        <img src="https://sanchocreativo.github.io/sociologia-de-los-medios-de-comunicacion-encuesta/assets/undraw_social_sharing_re_pvmr.svg" alt={`illustration`} className="svg-image" />
       </div>
       </div>
     </div>
