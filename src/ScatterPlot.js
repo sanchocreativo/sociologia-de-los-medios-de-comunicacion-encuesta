@@ -7,10 +7,10 @@ import { AxisLeft, AxisBottom } from '@visx/axis';
 const ScatterPlot = ({ width, height, data }) => {
   // Map influence descriptions to numerical values for scatter plot
   const influenceMapping = {
-    'Mucho': 4,
-    'A veces': 3,
-    'Raramente': 2,
-    'No me influyen': 1,
+    'Mucho, confío en sus recomendaciones': 4,
+    'A veces, pero prefiero investigar por mi cuenta': 3,
+    'Raramente, no me influyen mucho': 2,
+    'No me influyen en absoluto': 1,
   };
 
   const processedData = data.map(d => ({
@@ -47,8 +47,8 @@ const ScatterPlot = ({ width, height, data }) => {
             fill="blue"
           />
         ))}
-        <AxisBottom scale={xScale} top={height} label="Influencia de Amigos" />
-        <AxisLeft scale={yScale} label="Influencia en Decisiones de Compra" />
+        <AxisBottom scale={xScale} top={height} label="" />
+        <AxisLeft scale={yScale} label="" />
       </svg>
       <div className="legend">
         <div className="legend-item">

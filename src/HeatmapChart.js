@@ -23,7 +23,6 @@ const HeatmapChart = ({ width, height, data }) => {
     });
 
     setFlattenedData(tempData);
-    console.log('Flattened Data:', tempData); // Debugging output
   }, [data]);
 
   const xScale = scaleBand({
@@ -50,14 +49,14 @@ const HeatmapChart = ({ width, height, data }) => {
       <h2 className="chart-title">Confianza e Influencia en Decisiones de Compra</h2>
       <svg width={width + 100} height={height + 100}>
         {/* X-axis Label */}
-        <text x={(width + 100) / 2} y={height + 90} textAnchor="middle" fontSize={16} fontWeight="bold">
+        <text x={(width + 100) / 2} y={height + 10} textAnchor="middle" fontSize={16} fontWeight="bold">
           Influencia en Decisiones de Compra (1-5)
         </text>
 
         {/* Y-axis Label */}
         <text
           x={20}
-          y={(height + 100) / 2}
+          y={(height + 170) / 2}
           textAnchor="middle"
           fontSize={16}
           fontWeight="bold"

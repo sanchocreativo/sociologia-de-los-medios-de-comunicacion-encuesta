@@ -9,28 +9,33 @@ import { useTooltip, Tooltip } from '@visx/tooltip';
 const colors = { fintech: '#4CAF50', banks: '#FF9800', crypto: '#F44336' };
 
 const StackedBarChart = ({ width, height, data }) => {
-  // Process data
+  // Initialize processedData with categories and counts set to zero
   const processedData = [
-    { appType: 'Fintech', fintech: 0, banks: 0, crypto: 0 },
+    { appType: 'Fintech Apps', fintech: 0, banks: 0, crypto: 0 },
     { appType: 'Traditional Banks', fintech: 0, banks: 0, crypto: 0 }
   ];
 
+  // Process each survey response
   data.forEach(d => {
-    const appUsage = d['¿Utilizas alguna aplicación o red social para manejar tus finanzas o hacer pagos?'];
-    const trust = d['¿En qué confías más para manejar tu dinero?'];
+    const appUsage = d['¿Utilizas alguna aplicación o red social para manejar tus finanzas o hacer pagos?'] || '';
+    const trust = d['¿En qué confías más para manejar tu dinero?'] || '';
 
-    if (appUsage.includes('fintech')) {
-      if (trust.includes('Fintech')) processedData[0].fintech++;
-      if (trust.includes('Bancos')) processedData[0].banks++;
-      if (trust.includes('Crypto')) processedData[0].crypto++;
+    // If user uses fintech apps
+    if (appUsage.toLowerCase().includes('fintech')) {
+      if (trust.toLowerCase().includes('fintech')) processedData[0].fintech++;
+      if (trust.toLowerCase().includes('banco')) processedData[0].banks++;
+      if (trust.toLowerCase().includes('cripto')) processedData[0].crypto++;
     }
-    if (appUsage.includes('Banco')) {
-      if (trust.includes('Fintech')) processedData[1].fintech++;
-      if (trust.includes('Bancos')) processedData[1].banks++;
-      if (trust.includes('Crypto')) processedData[1].crypto++;
+
+    // If user uses traditional bank apps
+    if (appUsage.toLowerCase().includes('banco')) {
+      if (trust.toLowerCase().includes('fintech')) processedData[1].fintech++;
+      if (trust.toLowerCase().includes('banco')) processedData[1].banks++;
+      if (trust.toLowerCase().includes('cripto')) processedData[1].crypto++;
     }
   });
 
+  // Define scales
   const xScale = scaleBand({
     domain: processedData.map(d => d.appType),
     padding: 0.2,

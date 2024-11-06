@@ -78,7 +78,7 @@ const SankeyApproximation = ({ width, height, data }) => {
       <h2 className="chart-title">Relación entre Tipo de Contenido Preferido y Tiempo en Celular</h2>
       <svg width={width + 100} height={height + 100}>
         {/* X-axis Label */}
-        <text x={(width + 100) / 2} y={height + 90} textAnchor="middle" fontSize={16} fontWeight="bold">
+        <text x={(width + 100) / 2} y={height + 10} textAnchor="middle" fontSize={16} fontWeight="bold">
           Tiempo en Celular (horas)
         </text>
 
