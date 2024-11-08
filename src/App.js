@@ -6,6 +6,7 @@ import ScatterPlot from './ScatterPlot';
 import RadarPage from './RadarPage';
 import './App.css';
 import data from './encuesta.json';
+import BubbleChart from './GenderBubble';
 
 const ChartPage = ({ title, description, chart, svg, secondaryDescription }) => (
   <div className="custom-row">
@@ -43,6 +44,12 @@ const App = () => {
       <h2 className="chart-title-main">
         Encuesta anónima sobre Consumo de Información y Uso de Redes Sociales en Jóvenes de 18 a 22 Años: Relaciones con la Sociedad y el Capital Cultural
       </h2>
+      <ChartPage
+        title="Empecemos con el Género"
+        description="Este gráfico muestra el género de los encuestados."
+        chart={<BubbleChart width={600} height={600} data={filteredData} />}
+        svg="/assets/gender-symbols-svgrepo-com.svg"
+      />
       
       <ChartPage
         title="Uso de Aplicaciones Financieras y Preferencia de Recursos Financieros"

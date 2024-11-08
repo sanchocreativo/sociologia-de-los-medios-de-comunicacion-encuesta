@@ -111,3 +111,11 @@ img.svg-image {
   display: block;
   margin: 0 auto;
 }
+
+.bubble {
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.bubble:hover {
+  transform: scale(1.2); /* Scale effect on hover */
+}
