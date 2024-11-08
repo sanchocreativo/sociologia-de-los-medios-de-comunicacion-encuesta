@@ -48,7 +48,7 @@ const App = () => {
         title="Empecemos con el Género"
         description="Este gráfico muestra el género de los encuestados."
         chart={<BubbleChart width={600} height={600} data={filteredData} />}
-        svg="/assets/gender-symbols-svgrepo-com.svg"
+        svg="https://sanchocreativo.github.io/sociologia-de-los-medios-de-comunicacion-encuesta/assets/gender-symbols-svgrepo-com.svg"
       />
       
       <ChartPage
