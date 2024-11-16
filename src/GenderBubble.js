@@ -12,6 +12,7 @@ const genderMapping = {
   'No binario': 'No binario'
 };
 
+
 // Process data from JSON file to count responses by gender
 const processData = (data) => {
   const genderCounts = {};
@@ -65,22 +66,22 @@ const BubbleChart = ({ width, height, data }) => {
           {chartData.map((d, i) => (
             <Circle
               key={`circle-${d.gender}`}
-              className="bubble" // Add class for transition effect
+              className="bubble" 
               cx={xScale(i)}
-              cy={height / 2} // Center vertically
+              cy={height / 2} 
               r={radiusScale(d.count)}
               fill={colorScale[d.gender]}
               onMouseMove={(event) => {
                 const coords = localPoint(event.target.ownerSVGElement, event);
                 showTooltip({
                   tooltipData: d,
-                  tooltipLeft: coords.x + 10, // Offset tooltip to the right
+                  tooltipLeft: coords.x + 10, 
                   tooltipTop: coords.y,
                 });
                 setHoveredId(i);
               }}
               onMouseLeave={() => {
-                setTimeout(hideTooltip, 100); // Small delay to reduce flicker
+                setTimeout(hideTooltip, 100); 
                 setHoveredId(null);
               }}
             />
@@ -90,10 +91,13 @@ const BubbleChart = ({ width, height, data }) => {
 
       {/* Tooltip */}
       {tooltipData && (
-        <TooltipWithBounds top={tooltipTop} left={tooltipLeft} style={ { position: 'absolute', left: '950px',  top: '100px'}}>
+        <TooltipWithBounds top={tooltipTop} left={tooltipLeft} style={ { position: 'absolute', left: '850px',  top: '300px'}}>
           <strong>{genderMapping[tooltipData.gender]}</strong>: {tooltipData.count} respuestas
         </TooltipWithBounds>
       )}
+
+   
+    
     </div>
   );
 };

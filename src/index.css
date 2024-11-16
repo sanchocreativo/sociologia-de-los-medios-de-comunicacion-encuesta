@@ -66,12 +66,31 @@ svg {
   flex-wrap: wrap;
   margin: 20px 0;
 }
+.custom-row.svgChart img.svg-image {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
 .custom-col-6 {
   width: 50%;
   padding: 20px;
   box-sizing: border-box;
 }
+
+.custom-col-4 {
+  width: 40%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.custom-col-8 {
+  width: 60%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
 
 .custom-col-6-content {
   display: flex;
@@ -112,10 +131,24 @@ img.svg-image {
   margin: 0 auto;
 }
 
-.bubble {
-  transition: transform 0.3s ease; /* Smooth transition */
+
+.svgsocialnetworks.nobinario{
+  position: absolute;
+  top: 38%;
+  right: calc(-5% - 6px);
+  z-index: -1;
 }
 
-.bubble:hover {
-  transform: scale(1.2); /* Scale effect on hover */
+.svgsocialnetworks.femenino{
+  position: absolute;
+  top: 38%;
+  right: 15%;
+  z-index: -1;
+}
+
+.svgsocialnetworks.masculino{
+  position: absolute;
+  top: 38%;
+  right: 67%;
+  z-index: -1;
 }
