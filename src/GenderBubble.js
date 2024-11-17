@@ -55,7 +55,7 @@ const BubbleChart = ({ width, height, data }) => {
   // Color scale for each gender
   const colorScale = {
     Masculino: '#1f77b4',
-    Femenino: '#ff7f0e',
+    Femenino: '#FFB1C1',
     'No binario': '#2ca02c'
   };
 
